@@ -1,0 +1,74 @@
+[2023-02-09T00:41:24.799353+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.816947+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getName()  
+[2023-02-09T00:41:24.817083+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.817372+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.818374+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getName()  
+[2023-02-09T00:41:24.818423+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.818480+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.818996+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getList()  
+[2023-02-09T00:41:24.819043+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.819098+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.819592+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getNumItems()  
+[2023-02-09T00:41:24.819634+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.819687+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.820198+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::removeAllItems()  
+[2023-02-09T00:41:24.820239+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.820293+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.820717+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getFirstItem()  
+[2023-02-09T00:41:24.820753+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.820801+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.821217+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getLastError()  
+[2023-02-09T00:41:24.821254+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.821303+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.821703+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getLastError()  
+[2023-02-09T00:41:24.821739+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.821787+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.822175+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::setName()  
+[2023-02-09T00:41:24.822211+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.822258+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.822651+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::setName()  
+[2023-02-09T00:41:24.822687+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.822735+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.823133+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::addToList()  
+[2023-02-09T00:41:24.823170+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.823219+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:41:24.823626+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::addToList()  
+[2023-02-09T00:41:24.823662+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:41:24.823710+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.312782+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.314198+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getName()  
+[2023-02-09T00:42:02.314226+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.318360+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.318632+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getName()  
+[2023-02-09T00:42:02.318652+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.318712+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.318894+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getList()  
+[2023-02-09T00:42:02.318910+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.318964+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.319134+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getNumItems()  
+[2023-02-09T00:42:02.319148+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.319200+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.319363+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::removeAllItems()  
+[2023-02-09T00:42:02.319385+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.319436+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.319585+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getFirstItem()  
+[2023-02-09T00:42:02.319597+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.319656+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.319816+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getLastError()  
+[2023-02-09T00:42:02.319829+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.319878+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.320036+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::getLastError()  
+[2023-02-09T00:42:02.320047+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.320094+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.320238+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::setName()  
+[2023-02-09T00:42:02.320250+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.320298+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.320441+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::setName()  
+[2023-02-09T00:42:02.320452+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.320499+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.320643+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::addToList()  
+[2023-02-09T00:42:02.320655+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.320706+00:00] Codeception.INFO: PASSED  
+[2023-02-09T00:42:02.320859+00:00] Codeception.ALERT: Call to undefined method Tudublin\ShoppingList::addToList()  
+[2023-02-09T00:42:02.320870+00:00] Codeception.INFO: # ERROR #  
+[2023-02-09T00:42:02.320917+00:00] Codeception.INFO: PASSED  

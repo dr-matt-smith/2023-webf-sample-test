@@ -1,0 +1,36 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Tudublin\\": "src"
+        }
+    },
+    "scripts": {
+        "serve": "php -S localhost:8000 -t public",
+        "marku": "php php/mark_unit.php",
+        "marka": "php php/mark_acceptance.php",
+        "web": "./vendor/bin/codecept run acceptance  --tap",
+        "web1": "./vendor/bin/codecept run acceptance Web1Cest  --tap",
+        "web2": "./vendor/bin/codecept run acceptance Web2Cest  --tap",
+        "web3": "./vendor/bin/codecept run acceptance Web3Cest  --tap",
+        "web4": "./vendor/bin/codecept run acceptance Web4Cest  --tap",
+        "web5": "./vendor/bin/codecept run acceptance Web5Cest  --tap",
+        "unit": "./vendor/bin/codecept run unit  --tap",
+        "unit1": "./vendor/bin/codecept run unit Type1_ConstructGetSetTest  --tap",
+        "unit2": "./vendor/bin/codecept run unit Type2_BasicOperationsTest  --tap",
+        "unit3": "./vendor/bin/codecept run unit Type3_ValidationTest  --tap",
+        "unit4": "./vendor/bin/codecept run unit Type4_MainLogicTest  --tap",
+        "websteps": "./vendor/bin/codecept run acceptance --steps  --tap",
+        "web1steps": "./vendor/bin/codecept run acceptance Web1Cest --steps --tap",
+        "web2steps": "./vendor/bin/codecept run acceptance Web2Cest --steps --tap",
+        "web3steps": "./vendor/bin/codecept run acceptance Web3Cest --steps --tap",
+        "web4steps": "./vendor/bin/codecept run acceptance Web4Cest --steps --tap"
+    },
+    "require": {
+        "mattsmithdev/codeception-markup-validator": "^4.0",
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0",
+        "ext-simplexml": "*",
+        "monolog/monolog": "^3.3"
+    }
+}

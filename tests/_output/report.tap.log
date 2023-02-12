@@ -1,0 +1,15 @@
+TAP version 13
+ok 1 - TudublinTest\Type1_ConstructGetSetTest:test_TYPE_1_01_ConGetSet_NotNullAfterConstruction
+not ok 2 - Error: TudublinTest\Type1_ConstructGetSetTest::test_TYPE_1_02_ConGetSet_ListNameCorrectAfterValidConstruction
+not ok 3 - Error: TudublinTest\Type1_ConstructGetSetTest::test_03_TYPE_1_ConGetSet_ListNameCorrectAfterAnotherValidConstruction
+not ok 4 - Error: TudublinTest\Type1_ConstructGetSetTest::test_04_TYPE_1_ConGetSet_DefaultArrayAfterConstruction
+not ok 5 - Error: TudublinTest\Type1_ConstructGetSetTest::test_05_TYPE_1_ConGetSet_ThreeItemsAfterConstruction
+not ok 6 - Error: TudublinTest\Type2_BasicOperationsTest::test_06_TYPE_2_BasicOperations_ListEmptyAfterAllItemsRemoved
+not ok 7 - Error: TudublinTest\Type2_BasicOperationsTest::test_07_TYPE_2_BasicOperations_GetDefaultFirstItem
+not ok 8 - Error: TudublinTest\Type3_ValidationTest::test_08_TYPE_3_Validation_LastErrorNoneAfterValidConstruction
+not ok 9 - Error: TudublinTest\Type3_ValidationTest::test_09_TYPE_3_Validation_LastErrorEmptyStringAfterInValidConstruction
+not ok 10 - Error: TudublinTest\Type3_ValidationTest::test_10_TYPE_3_Validation_LastErrorEmptyStringAfterEmptySetName
+not ok 11 - Error: TudublinTest\Type3_ValidationTest::test_11_TYPE_3_Validation_FalseWhenSubmitEmptyName
+not ok 12 - Error: TudublinTest\Type3_ValidationTest::test_12_TYPE_3_Validation_EmptyItemNameLastErrorAfterAddToListWithEmptyString
+not ok 13 - Error: TudublinTest\Type4_MainLogicTest::test_13_TYPE_4_MainLogic_ItemAddedToListWhenValidItemName
+1..13
