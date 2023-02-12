@@ -1,3 +1,0 @@
- [x] test TYPE 1 01 ConGetSet NotNullAfterConstruction
- [ ] test TYPE 1 02 ConGetSet ListNameCorrectAfterValidConstruction
-
