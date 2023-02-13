@@ -4,7 +4,7 @@ namespace TudublinTest;
 use Tudublin\ShoppingList;
 use PHPUnit\Framework\TestCase;
 
-class Type4_MainLogicTest extends TestCase
+class Type4_Main_Logic_Test extends TestCase
 {
 
     //--------------------------------------------
