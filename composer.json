@@ -4,26 +4,31 @@
             "Tudublin\\": "src"
         }
     },
+    "autoload-dev": {
+
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        }
+    },
     "scripts": {
         "serve": "php -S localhost:8000 -t public",
-        "marku": "php php/mark_unit.php",
-        "marka": "php php/mark_acceptance.php",
-        "web": "./vendor/bin/codecept run acceptance  --tap",
-        "web1": "./vendor/bin/codecept run acceptance Web1Cest  --tap",
-        "web2": "./vendor/bin/codecept run acceptance Web2Cest  --tap",
-        "web3": "./vendor/bin/codecept run acceptance Web3Cest  --tap",
-        "web4": "./vendor/bin/codecept run acceptance Web4Cest  --tap",
-        "web5": "./vendor/bin/codecept run acceptance Web5Cest  --tap",
-        "unit": "./vendor/bin/codecept run unit  --tap",
-        "unit1": "./vendor/bin/codecept run unit Type1_ConstructGetSetTest  --tap",
-        "unit2": "./vendor/bin/codecept run unit Type2_BasicOperationsTest  --tap",
-        "unit3": "./vendor/bin/codecept run unit Type3_ValidationTest  --tap",
-        "unit4": "./vendor/bin/codecept run unit Type4_MainLogicTest  --tap",
-        "websteps": "./vendor/bin/codecept run acceptance --steps  --tap",
-        "web1steps": "./vendor/bin/codecept run acceptance Web1Cest --steps --tap",
-        "web2steps": "./vendor/bin/codecept run acceptance Web2Cest --steps --tap",
-        "web3steps": "./vendor/bin/codecept run acceptance Web3Cest --steps --tap",
-        "web4steps": "./vendor/bin/codecept run acceptance Web4Cest --steps --tap"
+        "markunit": "php php/mark_unit.php",
+        "markweb": "php php/mark_acceptance.php",
+        "web": "./vendor/bin/codecept run acceptance  --xml",
+        "web1": "./vendor/bin/codecept run acceptance Type1_Page_Exists_Basic_HTML_Cest.php  --xml",
+        "web2": "./vendor/bin/codecept run acceptance Type2_Page_Contents_Cest  --xml",
+        "web3": "./vendor/bin/codecept run acceptance Type3_Link_And_Data_Test_Cest  --xml",
+        "web4": "./vendor/bin/codecept run acceptance Type4_Data_Checks_Cest  --xml",
+        "unit": "./vendor/bin/codecept run unit  --xml",
+        "unit1": "./vendor/bin/codecept run unit Type1_ConstructGetSetTest  --xml",
+        "unit2": "./vendor/bin/codecept run unit Type2_BasicOperationsTest  --xml",
+        "unit3": "./vendor/bin/codecept run unit Type3_ValidationTest  --xml",
+        "unit4": "./vendor/bin/codecept run unit Type4_MainLogicTest  --xml",
+        "websteps": "./vendor/bin/codecept run acceptance --steps  --xml",
+        "web1steps": "./vendor/bin/codecept run acceptance Type1_Page_Exists_Basic_HTML_Cest --steps --xml",
+        "web2steps": "./vendor/bin/codecept run acceptance Type2_Page_Contents_Cest --steps --xml",
+        "web3steps": "./vendor/bin/codecept run acceptance Type3_Link_And_Data_Test_Cest --steps --xml",
+        "web4steps": "./vendor/bin/codecept run acceptance Type4_Data_Checks_Cest --steps --xml"
     },
     "require": {
         "mattsmithdev/codeception-markup-validator": "^4.0",

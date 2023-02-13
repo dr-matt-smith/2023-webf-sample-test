@@ -8,7 +8,8 @@
 actor: FunctionalTester
 modules:
     enabled:
-        # add a framework module here
+        - PhpBrowser:
+              url: http://localhost:8000
         - \Helper\Functional
     step_decorators: ~
 

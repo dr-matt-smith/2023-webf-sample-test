@@ -12,6 +12,7 @@ $outputString = '';
 $readFileName = 'report.xml';
 $inFilePath = $filePath . $readFileName;
 $xmlString = file_get_contents($inFilePath);
+
 $results = new SimpleXMLElement($xmlString);
 
 //foreach ($movies->movie[0]->rating as $rating) {
@@ -77,13 +78,13 @@ if($results["name"] == $suite):
         $message .= $testName;
         $message .= PHP_EOL;
 
-        print $message;
+//        print $message;
         $outputString .= $message;
     }
 
     // blank line after all methods from current class output
     $message = "\n";
-    print $message;
+//    print $message;
     $outputString .= $message;
 
 

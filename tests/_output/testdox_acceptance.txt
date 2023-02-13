@@ -1,0 +1,28 @@
+ [x] test TYPE 1 01 pageValidHtml
+ [x] test TYPE 1 01 pageValidHtml
+ [x] test TYPE 1 01 pageValidHtml
+ [x] test TYPE 1 02 contentPage1
+ [x] test TYPE 1 03 contentPage2
+ [x] test TYPE 1 04 contentPage3
+ [x] test TYPE 2 01 Page Content
+ [x] test TYPE 2 02 Page Content
+ [x] test TYPE 2 03 Page Content
+ [x] test TYPE 2 04 Page Content
+ [x] test TYPE 2 05 Page Content
+ [x] test TYPE 3 01 Linkcheck
+ [x] test TYPE 3 02 Linkcheck
+ [x] test TYPE 3 03 Linkcheck
+ [x] pageHasHttpSuccessCode
+ [x] pageHasHttpSuccessCode
+ [x] test TYPE 4 01 seeCorrectNumberOfItems
+ [x] test TYPE 4 02 seeNameContentForFixtureModule1
+ [x] test TYPE 4 03 seeYearContentForFixtureModule1
+ [x] test TYPE 4 04 seeNameContentForFixtureModule2
+ [x] test TYPE 4 05 seeYearContentForFixtureModule2
+ [x] test TYPE 4 06 seeTableDataElementContentForModule1
+ [x] test TYPE 4 07 seeTableDataElementContentForModule2
+ [x] test TYPE 4 08 seeTableDataElementContentForModule3
+ [x] test TYPE 4 08 seeTableDataElementContentForModule
+ [x] test TYPE 4 08 seeTableDataElementContentForModule
+ [x] test TYPE 4 08 seeTableDataElementContentForModule
+
