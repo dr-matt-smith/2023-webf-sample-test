@@ -4,7 +4,7 @@ namespace TudublinTest;
 use Tudublin\ShoppingList;
 use PHPUnit\Framework\TestCase;
 
-class Type3_ValidationTest extends TestCase
+class Type3_Validation_Test extends TestCase
 {
 
 
