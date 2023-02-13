@@ -1,7 +1,4 @@
 <?php
-
-//namespace App\Tests;
-
 use \Codeception\Example;
 use \Codeception\Util\HttpCode;
 
@@ -17,11 +14,13 @@ class Type1_Page_Exists_Basic_HTML_Cest
      * @example { "url": "/?action=address"}
      * @example { "url": "/?action=modules"}
      */
-    public function test_TYPE_1_01_pageValidHtml(AcceptanceTester $I, Example $example)
+    public function test_TYPE_1_01_page_response_okay(AcceptanceTester $I, Example $example)
     {
         $url = $example['url'];
         $I->amOnPage($url);
-        $I->validateMarkup(['ignoreWarnings' => false]);
+
+        $I->seeResponseCodeIs(HttpCode::OK);
+        $I->dontSeeResponseCodeIs(HttpCode::NOT_FOUND);
     }
 
 

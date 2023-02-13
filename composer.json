@@ -12,8 +12,8 @@
     },
     "scripts": {
         "serve": "php -S localhost:8000 -t public",
-        "markunit": "php php/mark_unit.php",
-        "markweb": "php php/mark_acceptance.php",
+        "markunit": "php marking/mark_unit.php",
+        "markweb": "php marking/mark_acceptance.php",
         "web": "./vendor/bin/codecept run acceptance  --xml",
         "web1": "./vendor/bin/codecept run acceptance Type1_Page_Exists_Basic_HTML_Cest.php  --xml",
         "web2": "./vendor/bin/codecept run acceptance Type2_Page_Contents_Cest  --xml",
@@ -31,11 +31,13 @@
         "web4steps": "./vendor/bin/codecept run acceptance Type4_Data_Checks_Cest --steps --xml"
     },
     "require": {
-        "mattsmithdev/codeception-markup-validator": "^4.0",
         "codeception/codeception": "^4.1",
         "codeception/module-phpbrowser": "^1.0.0",
         "codeception/module-asserts": "^1.0.0",
         "ext-simplexml": "*",
         "monolog/monolog": "^3.3"
+    },
+    "require-dev": {
+        "codeception/assert-throws": "^1.3"
     }
 }

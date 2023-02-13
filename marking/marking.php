@@ -11,7 +11,9 @@ $resultsFileName = $writeFileName;
 
 $resultsPath = $filePath . $resultsFileName;
 
-print "\n\n ----- lab test marking ----- TYPE = $suite\n\n";
+print "\n\n-----------------------------------------------------------------------------------------------";
+
+print "\nlab test (estimated experimental) marking              test suite = '$suite' \n";
 
 if(file_exists($resultsPath)){
     $results = file($resultsPath, FILE_IGNORE_NEW_LINES);
@@ -94,8 +96,11 @@ print "TYPE 3 tests = $type3TotalCorrect out of $type3Total tests =  $type3Marks
 print "TYPE 4 tests = $type4TotalCorrect out of $type4Total tests =  $type4Marks / $type4Proportion marks \n";
 print "\n";
 $totalType1234Marks = round($type1Marks + $type2Marks + $type3Marks + $type4Marks + 0.49);
-print "$totalType1234Marks / $maxPossible = $totalType1234Marks %\n\n";
+print "(estimated grade) $totalType1234Marks / $maxPossible = $totalType1234Marks %          test suite = '$suite' \n";
 
 if($maxPossible != 100){
     print "????????? max possible marks is NOT 100%, it's $maxPossible !!!!????? \n";
 }
+print "(NOTE: provisional marking is an experimental feature,\nthe lecturer will inform you of the actual grade when your submitted code has been assessed)\n";
+print "-----------------------------------------------------------------------------------------------\n\n";
+

@@ -1,33 +1,31 @@
 # lab test 1 (unit and web testing)
 
 This tests has 2 parts:
-    - unit testing  (50% of this test)
-    - web testing (50% of this test)
+    - unit test classes in "/tests/unit"  (50% of this test)
+    - web test classes in "/tests/acceptance" (50% of this test)
+
+You are to write code to pass provided tests
+    - create the required class in "/src" to pass the unit tests
+    - edit ""/src/Application.php" as required as web front controller
+    - implement HTML output scripts in "/templates"
 
 -----------------------------------------------------------------------
-Question:
 
-write code to pass provided tests
-- create the required class in "/src" to pass the unit tests
-- edit /src/Application.php as required
-- implement HTML output scripts in /templates
------------------------------------------------------------------------
+SUBMIT the following PHP files:
+    1. the new class in folder "/src" created to pass the Unit tests
+    2. any updated classes in "/src", such as "Application.php"
+    3. any new / updated PHP files in folder "/templates"
 
-    SUBMIT the following PHP files:
-        - /src/Application.php
-        - the contents of folder /templates
-        - also submit class /src/Account.php if you made any chances to that file
-
-	do NOT attempt to submit a ZIP folder - only ".php" text files can be submitted
+do NOT attempt to submit a ZIP folder - only ".php" text files can be submitted
 
 -----------------------------------------------------------------------
 GRADING:
-    10% - Type1 tests
-    20% - Type2 tests
-    30% - Type3 tests
-    40% - Type4 tests
+    10% - Type1 tests (unit / web)
+    20% - Type2 tests (unit / web)
+    30% - Type3 tests (unit / web)
+    40% - Type4 tests (unit / web)
 
-    NOTE: your solution for these tests must be from the data supplied from the Repository/Fixtures class (i.e. not hard coded)
+    NOTE: your solution for the Unit tests must be from the data supplied from the Repository/Fixtures class (i.e. not hard coded)
         (your submission will be tested with a different Fixtures class and tests matching those Fixtures)
 
 -----------------------------------------------------------------------
@@ -35,9 +33,11 @@ HINTS (general):
 
     - populate "/vendor" by running 'composer update'
 
-    - run the web server in the background with 'composer serve -d'
+    - run the web server in the background with 'symfony serve -d'
 
         - and use another terminal window to run tests while that server is running
+
+        - NOTE: If your web server is NOT running on port 8000, you'll need to update "acceptance.suite.yml" to your port for the web tests to work ...
 
     - run all WEB tests with 'composer web' / run all UNIT tests with 'composer unit'
 
@@ -45,29 +45,26 @@ HINTS (general):
 
     - run tests with detailed steps with 'composer websteps', 'composer web1steps', 'composer web2steps', and so on
 
-    - where to find the tests
-
-        - WEB test classes in '/tests/acceptance'
-
-        - UNIT test classes in '/tests/unit'
-
     - (beta) see provisional marking of your work
 
         - run "composer unit" then run "composer markunit"
 
         - run "composer web" then run "composer markweb"
 
-
 -----------------------------------------------------------------------
+HINTS (beta feature - automatic provisional marking):
 
-NOTES
+I'm trying out an automated grading tool, that analyses the "/tests/_output/report.xml" summary of test passes/failures, to give a provisional grade.
 
-    ensure you can access the internet from your computer, since the validation tests send the HTML to a server for validation
+    - run all Unit tests with "composer unit" then run "composer markunit"
 
-    if you get ERRORS for Web1 tests 1/2/3 - check whether the w3cvalidator service is available
-        https://www.isitdownrightnow.com/validator.w3.org.html
+        - in the terminal you'll see a summary and provisional grade
 
-    sometimes for 5-10 minutes blocks the W3C HTML validator service is slow / not responding due to demand
+        - there will also be a summary created in "textdox" format in file: "/tests/_output/testdox_unit.txt"
 
-    if not, just ignore web1 tests for now, and try again later in the test
-    - just comment out test method: "test_TYPE_1_01_pageValidHtml"
+    - run all Web Acceptances tests with "composer web" then run "composer markweb"
+
+        - in the terminal you'll see a summary and provisional grade
+
+        - there will also be a summary created in "textdox" format in file: "/tests/_output/testdox_acceptance.txt"
+

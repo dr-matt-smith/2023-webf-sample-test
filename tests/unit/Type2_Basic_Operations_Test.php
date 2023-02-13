@@ -11,7 +11,7 @@ class Type2_Basic_Operations_Test extends TestCase
     // type 2 tests = TYPE_2_BasicOperations
     //--------------------------------------------
 
-    public function test_06_TYPE_2_BasicOperations_ListEmptyAfterAllItemsRemoved()
+    public function test_TYPE_2_01_BasicOperations_ListEmptyAfterAllItemsRemoved()
     {
         // Arrange
         $myList = new ShoppingList('party');
@@ -25,7 +25,7 @@ class Type2_Basic_Operations_Test extends TestCase
         $this->assertEquals($expectedResult, $result);
     }
 
-    public function test_07_TYPE_2_BasicOperations_GetDefaultFirstItem()
+    public function test_TYPE_2_02_BasicOperations_GetDefaultFirstItem()
     {
         // Arrange
         $myList = new ShoppingList('party');

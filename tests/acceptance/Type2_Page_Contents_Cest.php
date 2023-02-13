@@ -1,5 +1,5 @@
 <?php
-use \Codeception\Util\HttpCode;
+use \Codeception\Example;
 
 /**
  * Web 2 tests
@@ -7,54 +7,35 @@ use \Codeception\Util\HttpCode;
  */
 class Type2_Page_Contents_Cest
 {
-    public function test_TYPE_2_01_Page_Content(AcceptanceTester $I)
+    /**
+     * @example { "url": "/", "expected_text" : "wednesday home page", "css_selector" : "head title"}
+     * @example { "url": "/", "expected_text" : "a mini Moodle page", "css_selector" : "body p"}
+     * @example { "url": "/", "expected_text" : "the home page is where it's at", "css_selector" : "body small"}
+     */
+    public function test_TYPE_2_01_contentPage1(AcceptanceTester $I, \Codeception\Example $example)
     {
-        $url = '/';
-        $expectedText = 'wednesday home page';
-        $cssSelector = 'head title';
-        $I->amOnPage($url);
-        $I->see($expectedText, ['css' => $cssSelector]);
-    }
+        $url = $example['url'];
+        $expectedText = $example['expected_text'];
+        $cssSelector = $example['css_selector'];
 
-
-    public function test_TYPE_2_02_Page_Content(AcceptanceTester $I)
-    {
-        $url = '/';
-        $expectedText = 'a mini Moodle page';
-        $cssSelector = 'body p';
-        $I->amOnPage($url);
-        $I->see($expectedText, ['css' => $cssSelector]);
-    }
-
-    public function test_TYPE_2_03_Page_Content(AcceptanceTester $I)
-    {
-        $url = '/';
-        $expectedText = "the home page is where it's at";
-        $cssSelector = 'body small';
-        $I->amOnPage($url);
-        $I->see($expectedText, ['css' => $cssSelector]);
-    }
-
-
-    public function test_TYPE_2_04_Page_Content(AcceptanceTester $I)
-    {
-        $url = '/?action=address';
-        $expectedText = 'wednesday address page';
-        $cssSelector = 'head title';
         $I->amOnPage($url);
         $I->see($expectedText, ['css' => $cssSelector]);
 
         $I->dontSeeLink('Logout');
     }
 
-    public function test_TYPE_2_05_Page_Content(AcceptanceTester $I)
+    /**
+     * @example { "url": "/?action=address", "expected_text" : "wednesday address page", "css_selector" : "head title"}
+     * @example { "url": "/?action=address", "expected_text" : "10 Main Street, New York", "css_selector" : "body p span"}
+     * @example { "url": "/?action=modules", "expected_text" : "modules page", "css_selector" : "body h1"}
+     */
+    public function test_TYPE_2_02_contentPage2(AcceptanceTester $I, \Codeception\Example $example)
     {
-        $url = '/?action=address';
-        $expectedText = '10 Main Street, New York';
-        $cssSelector = 'body p span';
+        $url = $example['url'];
+        $expectedText = $example['expected_text'];
+        $cssSelector = $example['css_selector'];
+
         $I->amOnPage($url);
         $I->see($expectedText, ['css' => $cssSelector]);
     }
-
-
 }

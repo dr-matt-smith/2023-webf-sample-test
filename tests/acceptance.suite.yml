@@ -10,6 +10,4 @@ modules:
         - PhpBrowser:
             url: http://localhost:8000
         - \Helper\Acceptance
-#        - \App\Tests\Helper\Functional
-        - Kolyunya\Codeception\Module\MarkupValidator
-step_decorators: ~        
+step_decorators: ~

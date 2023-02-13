@@ -39,29 +39,47 @@ $results = new SimpleXMLElement($xmlString);
 //    print $message;
 //    $outputString .= $message;
 
+$previousClass = '';
+
 // only process for current suite (unit / acceptance)
 if($results["name"] == $suite):
     foreach ($results->testcase as $testcase) {
 
+
 //        print "TEST CASE\n";
 //        var_dump($testcase);
-        //die();
+//        die();
         // print out class name line (if new)
-        $className = $testcase[0]["classname"];
+        $className = $testcase[0]["class"];
+
+//        var_dump($className);
+//        die();
+
+        if(strcmp($className, $previousClass) !== 0){
+            $previousClass = $className;
+            $outputString .= "\nTest Class = $className\n";
+        }
+
+
 
 
 
         $testName = $testcase[0]["name"];
+        $testFeature = $testcase[0]["feature"];
+        if(!empty($testFeature)){
+            $testName = $testFeature;
+        }
         $testName = str_replace('_', ' ', $testName);
+        $testName = str_replace('test type', 'test TYPE', $testName);
 
 //        // "error" not "failure" from Codeception
         $error = $testcase->error;
         $failure = $testcase->failure;
 
-//        print "ERROR\n";
-//        var_dump($error);
+//        print "ailure\n";
+//        var_dump($failure);
 
-        $hasError = !empty($error);
+        $hasError = !(empty($error) && empty($failure));
 //        print "hasError\n";
 //        var_dump($hasError);
 

@@ -34,7 +34,7 @@ class Type1_Construct_Get_Set_Test extends TestCase
         $this->assertEquals($expectedResult, $result);
     }
 
-    public function test_03_TYPE_1_ConGetSet_ListNameCorrectAfterAnotherValidConstruction()
+    public function test_TYPE_1_03_ConGetSet_ListNameCorrectAfterAnotherValidConstruction()
     {
         // Arrange
         $myList = new ShoppingList('weekend');
@@ -48,7 +48,7 @@ class Type1_Construct_Get_Set_Test extends TestCase
     }
 
 
-    public function test_04_TYPE_1_ConGetSet_DefaultArrayAfterConstruction()
+    public function test_TYPE_1_04_ConGetSet_DefaultArrayAfterConstruction()
     {
         // Arrange
         $myList = new ShoppingList('party');
@@ -64,7 +64,7 @@ class Type1_Construct_Get_Set_Test extends TestCase
     }
 
 
-    public function test_05_TYPE_1_ConGetSet_ThreeItemsAfterConstruction()
+    public function test_TYPE_1_05_ConGetSet_ThreeItemsAfterConstruction()
     {
         // Arrange
         $myList = new ShoppingList('party');

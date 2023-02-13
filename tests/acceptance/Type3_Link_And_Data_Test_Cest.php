@@ -1,4 +1,5 @@
 <?php
+use \Codeception\Example;
 
 /**
  * Web 3 tests
@@ -6,11 +7,16 @@
  */
 class Type3_Link_And_Data_Test_Cest
 {
-    public function test_TYPE_3_01_Linkcheck(AcceptanceTester $I)
+    /**
+     * @example { "url": "/", "linked_url" : "/?action=address", "link_text" : "contact address"}
+     * @example { "url": "/", "linked_url" : "/?action=modules", "link_text" : "module list"}
+     */
+    public function test_TYPE_3_01_linlsPage1(AcceptanceTester $I, \Codeception\Example $example)
     {
-        $url = '/';
-        $linkedUrl = '/?action=address';
-        $linkText = 'contact address';
+        $url = $example['url'];
+        $linkedUrl = $example['linked_url'];
+        $linkText = $example['link_text'];
+
 
         $I->amOnPage($url);
         $I->seeLink($linkText);
@@ -19,11 +25,16 @@ class Type3_Link_And_Data_Test_Cest
         $I->seeCurrentUrlEquals($linkedUrl);
     }
 
-    public function test_TYPE_3_02_Linkcheck(AcceptanceTester $I)
+    /**
+     * @example { "url": "/?action=address", "linked_url" : "/", "link_text" : "(home)"}
+     * @example { "url": "/?action=address", "linked_url" : "/?action=modules", "link_text" : "module list"}
+     */
+    public function test_TYPE_3_02_linksPage2(AcceptanceTester $I, \Codeception\Example $example)
     {
-        $url = '/';
-        $linkedUrl = '/?action=modules';
-        $linkText = 'module list';
+        $url = $example['url'];
+        $linkedUrl = $example['linked_url'];
+        $linkText = $example['link_text'];
+
 
         $I->amOnPage($url);
         $I->seeLink($linkText);
@@ -32,40 +43,16 @@ class Type3_Link_And_Data_Test_Cest
         $I->seeCurrentUrlEquals($linkedUrl);
     }
 
-    public function test_TYPE_3_03_Linkcheck(AcceptanceTester $I)
+    /**
+     * @example { "url": "/", "link_text" : "(home)"}
+     * @example { "url": "/", "link_text" : "Logout"}
+     */
+    public function test_TYPE_3_03_Should_NOT_See_Link(AcceptanceTester $I, \Codeception\Example $example)
     {
-        $url = '/?action=address';
-        $linkedUrl = '/';
-        $linkText = '(home)';
+        $url = $example['url'];
+        $linkText = $example['link_text'];
 
         $I->amOnPage($url);
-        $I->seeLink($linkText);
-        $I->click($linkText);
-
-        $I->seeCurrentUrlEquals($linkedUrl);
-    }
-
-
-    public function test_TYPE_3_04_no_such_link(AcceptanceTester $I)
-    {
-        $url = '/?action=address';
-        $linkedUrl = '/';
-        $linkText = '(home)';
-
-        $I->amOnPage($url);
-        $I->seeLink($linkText);
-        $I->click($linkText);
-
-        $I->seeCurrentUrlEquals($linkedUrl);
-
-        $I->dontSeeLink('Logout');
-        //should not have link to home on home !
         $I->dontSeeLink($linkText);
-
     }
-
-
-
-
-
 }

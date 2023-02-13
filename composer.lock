@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "00c9a001970218eb986e41d91ecfd534",
+    "content-hash": "e10a5a2fff62ca9fc26ee59485f8e26f",
     "packages": [
         {
             "name": "behat/gherkin",
@@ -885,63 +885,6 @@
                 }
             ],
             "time": "2022-10-26T14:07:24+00:00"
-        },
-        {
-            "name": "mattsmithdev/codeception-markup-validator",
-            "version": "4.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/dr-matt-smith/codeception-markup-validator.git",
-                "reference": "7f478a67bbfe8c249ba18a388cb5e28af12ab1c5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/dr-matt-smith/codeception-markup-validator/zipball/7f478a67bbfe8c249ba18a388cb5e28af12ab1c5",
-                "reference": "7f478a67bbfe8c249ba18a388cb5e28af12ab1c5",
-                "shasum": ""
-            },
-            "require": {
-                "codeception/codeception": ">=2.0 <5.0",
-                "guzzlehttp/guzzle": "^7.0",
-                "php": ">=5.6 <8.2"
-            },
-            "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.0",
-                "php-coveralls/php-coveralls": "^2.0",
-                "phpunit/phpunit": "^5.2"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Kolyunya\\Codeception\\": "sources"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "LGPL-3.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Matt Smith",
-                    "email": "dr_matt_smith@me.com",
-                    "homepage": "http://mattsmithdev.com",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Markup validator module for Codeception.",
-            "homepage": "https://github.com/dr-matt-smith/codeception-markup-validator",
-            "keywords": [
-                "acceptance-testing",
-                "codeception",
-                "codeception-module",
-                "html-validator",
-                "markup-validator",
-                "w3c-validator"
-            ],
-            "support": {
-                "source": "https://github.com/dr-matt-smith/codeception-markup-validator/tree/v4.0.1"
-            },
-            "time": "2022-02-03T17:21:00+00:00"
         },
         {
             "name": "monolog/monolog",
@@ -4406,7 +4349,52 @@
             "time": "2021-07-28T10:34:58+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "codeception/assert-throws",
+            "version": "1.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Codeception/AssertThrows.git",
+                "reference": "f3b6078a5c7cc3661d3aaa378260ddc29eabc097"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Codeception/AssertThrows/zipball/f3b6078a5c7cc3661d3aaa378260ddc29eabc097",
+                "reference": "f3b6078a5c7cc3661d3aaa378260ddc29eabc097",
+                "shasum": ""
+            },
+            "require": {
+                "phpunit/phpunit": "^8.0|^9.0|^10.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Codeception\\": "./"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "davert",
+                    "email": "davert@codeception.com"
+                },
+                {
+                    "name": "Gustavo Nieves",
+                    "homepage": "https://medium.com/@ganieves"
+                }
+            ],
+            "description": "Assert exception was thrown without stopping a test",
+            "support": {
+                "issues": "https://github.com/Codeception/AssertThrows/issues",
+                "source": "https://github.com/Codeception/AssertThrows/tree/1.3.0"
+            },
+            "time": "2023-02-10T18:43:02+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": [],

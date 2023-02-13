@@ -37,4 +37,9 @@ class Module
     {
         $this->year = $year;
     }
+
+    public function __toString(): string
+    {
+        return "$this->id: $this->name, year $this->year";
+    }
 }

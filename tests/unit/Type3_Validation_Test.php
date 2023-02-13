@@ -12,7 +12,7 @@ class Type3_Validation_Test extends TestCase
     // type 3 tests = TYPE_3_Validation
     //--------------------------------------------
 
-    public function test_08_TYPE_3_Validation_LastErrorNoneAfterValidConstruction()
+    public function test_TYPE_3_01_Validation_LastErrorNoneAfterValidConstruction()
     {
         // Arrange
         $myList = new ShoppingList('party');
@@ -26,7 +26,7 @@ class Type3_Validation_Test extends TestCase
     }
 
 
-    public function test_09_TYPE_3_Validation_LastErrorEmptyStringAfterInValidConstruction()
+    public function test_TYPE_3_02_Validation_LastErrorEmptyStringAfterInValidConstruction()
     {
         // Arrange
         $myList = new ShoppingList('');
@@ -39,7 +39,7 @@ class Type3_Validation_Test extends TestCase
         $this->assertEquals($expectedResult, $result);
     }
 
-    public function test_10_TYPE_3_Validation_LastErrorEmptyStringAfterEmptySetName()
+    public function test_TYPE_3_03_Validation_LastErrorEmptyStringAfterEmptySetName()
     {
         // Arrange
         $myList = new ShoppingList('party');
@@ -54,7 +54,7 @@ class Type3_Validation_Test extends TestCase
     }
 
 
-    public function test_11_TYPE_3_Validation_FalseWhenSubmitEmptyName()
+    public function test_TYPE_3_04_Validation_FalseWhenSubmitEmptyName()
     {
         // Arrange
         $myList = new ShoppingList('party');
@@ -66,7 +66,7 @@ class Type3_Validation_Test extends TestCase
         $this->assertFalse($result);
     }
 
-    public function test_12_TYPE_3_Validation_EmptyItemNameLastErrorAfterAddToListWithEmptyString()
+    public function test_TYPE_3_05_Validation_EmptyItemNameLastErrorAfterAddToListWithEmptyString()
     {
         // Arrange
         $myList = new ShoppingList('party');
