@@ -4,7 +4,7 @@ namespace TudublinTest;
 use Tudublin\ShoppingList;
 use PHPUnit\Framework\TestCase;
 
-class Type1_ConstructGetSetTest extends TestCase
+class Type1_Construct_Get_Set_Test extends TestCase
 {
     //--------------------------------------------
     // type 1 tests = TYPE_1_ConGetSet = Constructor / Getters / Setters
