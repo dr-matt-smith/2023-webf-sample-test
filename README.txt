@@ -45,11 +45,6 @@ HINTS (general):
 
     - run tests with detailed steps with 'composer websteps', 'composer web1steps', 'composer web2steps', and so on
 
-    - (beta) see provisional marking of your work
-
-        - run "composer unit" then run "composer markunit"
-
-        - run "composer web" then run "composer markweb"
 
 -----------------------------------------------------------------------
 HINTS (beta feature - automatic provisional marking):
